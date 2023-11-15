@@ -5,28 +5,26 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Services App",
+    img: "/services.PNG",
+    desc: "As a passionate and innovative developer, I have designed and developed a dynamic Services Application that showcases my commitment to creating practical solutions. This application seamlessly connects users with a range of services, providing a user-friendly interface and a robust backend to ensure a smooth experience.",
+    url:"https://servicesapp.netlify.app/"
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "HorseLux App",
+    img: "/horse.PNG",
+    desc: "Introducing HorseLux, the ultimate equestrian companion app designed for horse enthusiasts and riders alike. Immerse yourself in a world where technology meets the equestrian lifestyle, offering a seamless blend of functionality and passion.",
+    url:"https://horseapp.netlify.app/"
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "RealState App",
+    img: "/realstate.PNG",
+    desc: "RealEstateHub empowers users to make informed real estate decisions by providing a user-friendly platform with advanced search capabilities and immersive property exploration features. It represents my commitment to delivering technology solutions that transform the real estate journey for both buyers and sellers.",
+    url:"https://real-e-state-app.netlify.app/"
   },
-  {
-    id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
+  
 ];
 
 const Single = ({ item }) => {
@@ -48,7 +46,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a target="_blank" href={item.url}>See Demo</a>
           </motion.div>
         </div>
       </div>
